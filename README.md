@@ -31,13 +31,13 @@ Web App Builder Course - Melbourne Nov 2016 - Class App
         - complete
    * **Our ideal customer** 
     
-    - Anyone without a large vehicle
+      - Anyone without a large vehicle
     
-    - Anyone not able to wait for a delivery
+      - Anyone not able to wait for a delivery
     
-    - Driver who has the time to do extra deliveries
+      - Driver who has the time to do extra deliveries
     
-    - someone working 9-5, not enough time to do pickup
+      - someone working 9-5, not enough time to do pickup
     
    * **Design the wireframes for the main screens of your application**
 
