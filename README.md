@@ -39,7 +39,9 @@ Web App Builder Course - Melbourne Nov 2016 - Class App
     
       - Driver who has the time to do extra deliveries
     
-      - someone working 9-5, not enough time to do pickup
+      - Someone working 9-5, not enough time to do pickup
+
+      - Someone who needs to transport something(s) which wouldn't fit in a taxi or Uber
     
    * **Design the wireframes for the main screens of your application**
 
