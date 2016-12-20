@@ -41,7 +41,7 @@ Web App Builder Course - Melbourne Nov 2016 - Class App
     
       - Someone working 9-5, not enough time to do pickup
 
-      - Someone who needs to transport something(s) which wouldn't fit in a taxi or Uber
+      - Someone who needs to transport something(s) which wouldn't fit in a taxi or Uber, or be able to go with the parcel.
     
    * **Design the wireframes for the main screens of your application**
 
