@@ -1,0 +1,2 @@
+- User can register as a driver
+- User can register as a rider
