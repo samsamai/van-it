@@ -1,10 +1,10 @@
 User Stories for Driver Job in Progress
 
-A driver picks up a rider at rider location
-A driver gets directions and ETA to rider location
-A driver gets directions and ETA to rider destination
-A driver messages a rider to ask a question
-A driver receives a cancellation notificatino
-A driver receives a message from a user
-A driver marks a ride as 'finished'
-A driver calls the user
+- A driver can see a map with rider location, directions, ETA
+- A driver can call the rider
+- A driver can message a rider to ask a question
+- A driver can receive a message from a user
+- A driver can receive a cancellation notification
+- A driver can click Job Start
+- A driver can see a map with destination location, directions, ETA
+- A driver can mark a ride as 'finished'
