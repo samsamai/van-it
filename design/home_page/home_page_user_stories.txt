@@ -1,2 +1,5 @@
-- User can register as a driver
-- User can register as a rider
+- User can enter username and password to login
+- User can click to go to reset-pasword page
+- User can click a link to go to rider registration page
+- User can click a link to go to driver registration page
+- A signed-in user is redirected to the user dashboard
