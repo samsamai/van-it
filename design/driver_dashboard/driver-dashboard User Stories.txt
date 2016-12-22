@@ -1,18 +1,14 @@
 Driver-dashboard User Stories
 
-- A driver can see their profile picture
-- A driver can see their profile information
-- A driver can activate their status
-- A driver can de-activate their status
+- A driver can click a link to go to the user edit profile page
+- A driver can mark themselves as un/available
 
 - If a job is available
 	- A driver can see that a job is available
 	- A driver can see a map that shows where the job will commence
 	- A driver can accept the available job
 	- A driver can decline the available job
-- If a job is not available
-	- A driver can see an "awaiting jobs" notification
+- If no jobs are available
+	- A driver can see an "No jobs available" notification
 
-- A driver can see their job history
-- A driver can click on a job in their job history to see more details
-
+- A driver can click a link to go to their job history page
