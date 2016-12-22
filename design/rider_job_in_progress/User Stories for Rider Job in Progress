@@ -1,0 +1,10 @@
+User Stories for Rider Job in Progress
+
+- A rider can message a driver
+- A rider can call the driver
+- A rider can cancels a ride
+- A rider can see the location and ETA of their driver while waiting
+- A rider can receive a message from a driver
+- A rider can see a map with destination location, directions, ETA
+- Once the ride has started, cancel button is disabled
+- When job is completed a rider sees the summary of the job
