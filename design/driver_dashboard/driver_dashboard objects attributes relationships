@@ -1,0 +1,38 @@
+driver_dashboard objects
+
+- Driver
+- Job
+- Rider
+
+driver_dashboard attributes
+
+Driver
+ - Photo
+ - Name
+ - Rating
+ - Vehicle Type
+ - Registration
+ - Current Location
+ - Available
+ - Approved
+
+Rider
+ - Photo
+ - Name
+ - Rating
+ - Current Location
+
+Job
+ - Rider
+ - Driver
+ - Pickup location
+ - Dropoff location
+ - Status
+ - Cost
+
+driver_dashboard relationships
+
+ - Driver has_many Job
+ - Rider has_many Job
+ - Job belongs_to Driver
+ - Job belongs_to Rider
