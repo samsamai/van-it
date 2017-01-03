@@ -1,0 +1,7 @@
+Admin- Driver Approval User Stroies
+	- Admin can see the list of pending approval driver list.
+		- Admin can approve or reject the driver from the pending approval list.
+	- Admin can see the list of already approved driver list.
+		- Admin can suspend the driver already in the approved list.
+	- Admin can see the list of already rejected driver list.
+		- Admin can approve the driver in the rejected list.

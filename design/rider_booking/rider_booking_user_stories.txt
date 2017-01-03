@@ -1,0 +1,5 @@
+Rider Booking user stroies
+	- A rider can input the details to book a particular type of vehicle.
+	- A rider can get an estimate of the fare he will be charged.
+	- A rider is assigned a driver on submission of the order.
+	- A rider is asked to try again if currently no dirvers are available.
