@@ -1,0 +1,38 @@
+- user must fill in all mandatory sections: title, FirstName, LastName, address, perferred name, ABN (Australian Business Number), TFN (Tax File Number), bank details
+
+- error to occur when all fields are not filled in
+(message to occur "form incomplete- pls fill in all sections")
+
+- validation to occur on mobile number
+(ie. send text message to mobile to confirm number)
+
+- user must submit form and wait for confirmation
+
+Objects:
+  - Driver
+  - Vehicle
+  
+  
+Attributes:
+  Driver:
+    - firstname
+    - lastname
+    - address
+    - ABN
+    - bank account details
+    - Date of birth
+    - license number
+    - license expiry
+    - vehicle
+    
+  Vehicle:
+    - rego
+    - type
+    - make
+    - model
+    - year
+    - colour
+    
+Relationships:
+  Driver has one vehicles
+  Vehicle belongs to driver
