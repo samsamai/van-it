@@ -1,0 +1,4 @@
+Admin Login User Stories
+	- An admin has a link to login page
+	- An admin provides his login credential to logon.
+	
