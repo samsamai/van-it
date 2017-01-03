@@ -3,3 +3,14 @@ Rider Booking user stroies
 	- A rider can get an estimate of the fare he will be charged.
 	- A rider is assigned a driver on submission of the order.
 	- A rider is asked to try again if currently no dirvers are available.
+	
+	
+Objects:
+	- Rider
+	- Driver
+	- Job
+	
+	
+Attributes:
+	Job:
+		- cost_estimate
