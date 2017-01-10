@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  
+  devise_for :drivers, controllers: {
+        sessions: 'drivers/sessions',
+        passwords: 'drivers/passwords',
+        registrations: 'drivers/registrations'
+  }
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'dashboard/index'
 
