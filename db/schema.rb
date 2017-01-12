@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170110082531) do
+ActiveRecord::Schema.define(version: 20170110091151) do
 
   create_table "drivers", force: :cascade do |t|
     t.string   "email"
@@ -38,6 +38,17 @@ ActiveRecord::Schema.define(version: 20170110082531) do
     t.datetime "avatar_updated_at"
     t.index ["email"], name: "index_drivers_on_email", unique: true
     t.index ["reset_password_token"], name: "index_drivers_on_reset_password_token", unique: true
+  end
+
+  create_table "jobs", force: :cascade do |t|
+    t.string   "pickup_address"
+    t.float    "pickup_lat"
+    t.float    "pickup_lon"
+    t.string   "dropoff_address"
+    t.float    "dropoff_lat"
+    t.float    "dropoff_lon"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "riders", force: :cascade do |t|

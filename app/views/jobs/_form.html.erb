@@ -1,0 +1,47 @@
+<%= form_for(job) do |f| %>
+  <% if job.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(job.errors.count, "error") %> prohibited this job from being saved:</h2>
+
+      <ul>
+      <% job.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pickup_address %>
+    <%= f.text_field :pickup_address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pickup_lat %>
+    <%= f.text_field :pickup_lat %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pickup_lon %>
+    <%= f.text_field :pickup_lon %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dropoff_address %>
+    <%= f.text_field :dropoff_address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dropoff_lat %>
+    <%= f.text_field :dropoff_lat %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dropoff_lon %>
+    <%= f.text_field :dropoff_lon %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pickup_address: MyString
+  pickup_lat: 1.5
+  pickup_lon: 1.5
+  dropoff_address: MyString
+  dropoff_lat: 1.5
+  dropoff_lon: 1.5
+
+two:
+  pickup_address: MyString
+  pickup_lat: 1.5
+  pickup_lon: 1.5
+  dropoff_address: MyString
+  dropoff_lat: 1.5
+  dropoff_lon: 1.5
