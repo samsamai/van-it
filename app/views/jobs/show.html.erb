@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pickup address:</strong>
+  <%= @job.pickup_address %>
+</p>
+
+<p>
+  <strong>Pickup lat:</strong>
+  <%= @job.pickup_lat %>
+</p>
+
+<p>
+  <strong>Pickup lon:</strong>
+  <%= @job.pickup_lon %>
+</p>
+
+<p>
+  <strong>Dropoff address:</strong>
+  <%= @job.dropoff_address %>
+</p>
+
+<p>
+  <strong>Dropoff lat:</strong>
+  <%= @job.dropoff_lat %>
+</p>
+
+<p>
+  <strong>Dropoff lon:</strong>
+  <%= @job.dropoff_lon %>
+</p>
+
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@job.pickup_lat},#{@job.pickup_lon}&markers=color:blue|label:S|#{@job.pickup_lat},#{@job.pickup_lon}&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8", class: 'img-fluid img-rounded'%>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>
