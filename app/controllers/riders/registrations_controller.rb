@@ -8,9 +8,34 @@ class Riders::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    # super
+
+    # Set your secret key: remember to change this to your live secret key in production
+    # See your keys here: https://dashboard.stripe.com/account/apikeys
+    # Stripe.api_key = "sk_test_jdmMWwai1cupRtof4yqisUIX"
+
+    # Token is created using Stripe.js or Checkout!
+    # Get the payment token submitted by the form:
+    token = params[:stripeToken]
+
+    # Create a Customer:
+    customer = Stripe::Customer.create(
+      :email => "paying.user@example.com",
+      :source => token,
+    )
+
+    # Charge the Customer instead of the card:
+    charge = Stripe::Charge.create(
+      :amount => 1000,
+      :currency => "aud",
+      :customer => customer.id,
+    )
+
+    # YOUR CODE: Save the customer ID and other info in a database for later.
+
+    # YOUR CODE (LATER): When it's time to charge the customer again, retrieve the customer ID.
+  end
 
   # GET /resource/edit
   # def edit
