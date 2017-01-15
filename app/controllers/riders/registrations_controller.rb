@@ -20,19 +20,15 @@ before_action :configure_account_update_params, only: [:update]
 
     # Create a Customer:
 
-    @rider.stripe_token = stripe_token
-    if @rider.save
-      customer = Stripe::Customer.create(
-        :email => @rider.email,
-        :source => stripe_token,
-      )
+    customer = Stripe::Customer.create(
+      :email => @rider.email,
+      :source => stripe_token,
+    )
 
-      # Charge the Customer instead of the card:
-      charge = Stripe::Charge.create(
-        :amount => 1000,
-        :currency => "aud",
-        :customer => customer.id,
-      )
+    # @rider.stripe_token = stripe_token
+    @rider.customer_id = customer.id
+
+    if @rider.save
     else
     end
     # YOUR CODE: Save the customer ID and other info in a database for later.

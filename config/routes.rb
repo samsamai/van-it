@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'dashboard/index'
+  get 'dashboard/show'
 
   get 'landing_page/show'
   authenticated :user do

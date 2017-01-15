@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170115010808) do
+ActiveRecord::Schema.define(version: 20170115020233) do
 
   create_table "drivers", force: :cascade do |t|
     t.string   "email"
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 20170115010808) do
     t.string   "phone"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.string   "stripe_token"
+    t.string   "customer_id"
     t.index ["email"], name: "index_riders_on_email", unique: true
     t.index ["reset_password_token"], name: "index_riders_on_reset_password_token", unique: true
   end
